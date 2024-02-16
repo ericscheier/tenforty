@@ -9,15 +9,13 @@ jobs:
   # succeeds
   build-wheels:
     name: Build wheels on ${{ matrix.os }}
-    needs: validate
-    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         # macos-13 is an intel runner, macos-14 is apple silicon
         # os: [ubuntu-22.04, windows-2022, macos-13, macos-14]
         # os: [ubuntu-22.04, macos-13, macos-14]
-        os: [windows-2022]
+        os: [windows-latest]
 
     steps:
     - uses: actions/checkout@v4
