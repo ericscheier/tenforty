@@ -80,3 +80,6 @@ ignore = [
 per-file-ignores = {}
 select = ["A", "B", "D", "E", "F", "I", "ISC", "UP", "RUF", "W"]
 unfixable = []
+
+[tool.setuptools]
+packages = ["tenforty", "tenforty.otslib"]
