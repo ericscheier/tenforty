@@ -81,12 +81,7 @@ per-file-ignores = {}
 select = ["A", "B", "D", "E", "F", "I", "ISC", "UP", "RUF", "W"]
 unfixable = []
 
-[tool.setuptools]
-include-package-data = true
-
-[tool.setuptools.exclude-package-data]
-"*" = ["*.cpp", "*.c", "*.h"]
-
 [tool.setuptools.packages.find]
-include = ["tenforty", "tenforty.*"]
+include = ["tenforty*"]
 namespaces = false
+where = ["tenforty"]
