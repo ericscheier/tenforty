@@ -82,6 +82,6 @@ select = ["A", "B", "D", "E", "F", "I", "ISC", "UP", "RUF", "W"]
 unfixable = []
 
 [tool.setuptools.packages.find]
-include = ["tenforty*"]
+include = ["tenforty", "tenforty*"]
 namespaces = false
 where = ["tenforty"]
